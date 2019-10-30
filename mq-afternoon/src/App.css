@@ -1,0 +1,138 @@
+#logo{
+  font-family: 'Permanent Marker', cursive;
+  color: rgb(245, 245, 48);
+  font-size: 35px;
+  margin-left: 25px;
+}
+nav{
+  background-color: grey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#nav-button-box{
+display: flex;
+flex-direction: row;
+flex-wrap: nowrap;
+justify-content: space-around;
+align-items: center;
+align-content: stretch;
+align-content: space-around;
+margin-right: 20px;
+width: 40%;
+}
+.nav-buttons{
+  display: flex;
+  width: 80px;
+  text-align: center;
+  padding: 5px 0px;
+}
+.nav-buttons:hover{
+  color: rgb(245, 245, 48);
+  transition: .5s;
+}
+.dropdown{
+  
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  top: 50px;
+  right: 0;
+  background-color: black;
+  width: 100%;
+  color: whitesmoke;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: baseline;
+  border-bottom-left-radius: 6px;
+}
+.hide-animation{
+  animation-name: hide;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+.show-animation{
+  animation-name: show;
+  animation-duration: .5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+@keyframes hide{
+  0% {
+    height: 100px;
+  }
+  100%{
+    height: 0px;
+  }
+}
+@keyframes show{
+  0% {
+    height: 0px;
+  }
+  100% {
+    height: 100px;
+  }
+}
+@media(min-width: 990px){
+  #hamburder-icon, .dropdown {
+    display: none;
+  }
+}
+@media(max-width: 990px){
+  #nav-button-box, #nav-button-box{
+    display: none;
+  }
+}  
+.content{
+  width: 100%;
+  height: 70vh;
+  background-image: URL('https://mykeyport.com/media/images/blog/edc/weekend-escape-edc.jpg');
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+	align-items: center;
+  align-content: stretch;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  
+
+}
+.bottom-content{
+  height: 30vh;
+  background-color: whitesmoke;
+  display: flex;
+}
+#welcome{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+  align-content: stretch;
+  font-size: 45px;
+  
+}
+#greeting{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+  align-content: stretch;
+  font-size: 60px;
+}
+
+#info-button{
+  display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+  align-content: stretch;
+  height: 60px;
+  width: 150px;
+  background-color: #AC8502;
+}
